@@ -4,21 +4,25 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import Drawer from 'containers/drawer';
+import { drawerConfig } from 'utils/config';
+import styles from './index.css';
 
-const Header = ({ classes, uploadButton: UploadButton }) => (
+const Header = ({ classes }) => (
   <div className={classes.root}>
     <AppBar position="static" color="default">
       <Toolbar>
-        <Grid container justify="space-between" alignItems="center">
+        <Grid container justify="center" alignItems="center">
+          <div className={classes.menuButton}>
+            <Drawer config={drawerConfig} />
+          </div>
           <Typography variant="h6" color="primary">
-            Photo info
+            Your cool app
           </Typography>
-          <UploadButton />
         </Grid>
       </Toolbar>
     </AppBar>
   </div>
 );
 
-
-export default withStyles(null)(Header);
+export default withStyles(styles)(Header);
