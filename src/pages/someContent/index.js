@@ -1,10 +1,8 @@
 import React from 'react';
 import CardList from 'containers/cardList';
 import { cardsConfig } from './config';
-import { Dialog } from 'containers/dialog';
 
-const Main = () => (
+const SomeContent = () => (
   <CardList cardsConfig={cardsConfig} />
-);
-
-export default Main;
+)
+export default SomeContent;

@@ -5,4 +5,7 @@ export default {
   fullList: {
     width: 'auto',
   },
+  link: {
+    textDecoration: 'none',
+  }
 };

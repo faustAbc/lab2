@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Drawer from 'containers/drawer';
-import { drawerConfig } from 'utils/config';
+import { routing } from 'utils/config';
 import styles from './index.css';
 
 const Header = ({ classes }) => (
@@ -14,7 +14,7 @@ const Header = ({ classes }) => (
       <Toolbar>
         <Grid container justify="center" alignItems="center">
           <div className={classes.menuButton}>
-            <Drawer config={drawerConfig} />
+            <Drawer config={routing} />
           </div>
           <Typography variant="h6" color="primary">
             Your cool app

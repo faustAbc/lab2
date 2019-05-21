@@ -1,7 +1,7 @@
 const style = {
   root: {
     width: '60vw',
-    minWidth: 400,
+    minWidth: 350,
     margin: 'auto',
   }
 }

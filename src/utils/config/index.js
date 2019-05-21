@@ -1,1 +1,1 @@
-export * from './drawerConfig';
+export * from './routing';

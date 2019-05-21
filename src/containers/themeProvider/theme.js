@@ -6,6 +6,10 @@ const theme = createMuiTheme({
     secondary: { main: '#CED0CE' },
     type: 'dark'
   },
+  typography: {
+    fontWeightRegular: 200,
+    fontWeightMedium: 400,
+  }
 });
 
 export default theme;
